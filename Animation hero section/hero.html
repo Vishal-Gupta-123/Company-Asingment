@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll-Driven Hero Animation</title>
+    <link rel="stylesheet" href="hero.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <!-- Background Elements -->
+        <div class="bg-gradient"></div>
+        <div class="bg-orb orb-1"></div>
+        <div class="bg-orb orb-2"></div>
+        <div class="bg-orb orb-3"></div>
+        
+        <!-- Main Visual Element (3D Rotating Cube/Shape) -->
+        <div class="visual-container" id="visual">
+            <div class="visual-ring ring-1"></div>
+            <div class="visual-ring ring-2"></div>
+            <div class="visual-ring ring-3"></div>
+            <div class="visual-center">
+                <span class="visual-text">ITZ</span>
+                <span class="visual-subtext">FIZZ</span>
+            </div>
+        </div>
+        
+        <!-- Headline -->
+        <h1 class="headline" id="headline">
+            <span class="letter-wrapper">
+                <span class="letter" data-index="0">W</span>
+                <span class="letter" data-index="1">E</span>
+                <span class="letter" data-index="2">L</span>
+                <span class="letter" data-index="3">C</span>
+                <span class="letter" data-index="4">O</span>
+                <span class="letter" data-index="5">M</span>
+                <span class="letter" data-index="6">E</span>
+            </span>
+            <span class="letter-space"></span>
+            <span class="letter-wrapper">
+                <span class="letter" data-index="7">I</span>
+                <span class="letter" data-index="8">T</span>
+                <span class="letter" data-index="9">Z</span>
+            </span>
+            <span class="letter-space"></span>
+            <span class="letter-wrapper">
+                <span class="letter" data-index="10">F</span>
+                <span class="letter" data-index="11">I</span>
+                <span class="letter" data-index="12">Z</span>
+                <span class="letter" data-index="13">Z</span>
+            </span>
+        </h1>
+        
+        <!-- Subtitle -->
+        <p class="subtitle" id="subtitle">
+            Transforming ideas into digital excellence through innovative solutions
+        </p>
+        
+        <!-- Statistics -->
+        <div class="statistics" id="statistics">
+            <div class="stat-card" data-delay="0">
+                <div class="stat-value" data-count="98">0</div>
+                <div class="stat-unit">%</div>
+                <div class="stat-label">Efficiency</div>
+                <div class="stat-desc">Optimized workflow</div>
+            </div>
+            <div class="stat-card" data-delay="100">
+                <div class="stat-value" data-count="250">0</div>
+                <div class="stat-unit">+</div>
+                <div class="stat-label">Projects</div>
+                <div class="stat-desc">Successfully delivered</div>
+            </div>
+            <div class="stat-card" data-delay="200">
+                <div class="stat-value" data-count="50">0</div>
+                <div class="stat-unit">M+</div>
+                <div class="stat-label">Revenue</div>
+                <div class="stat-desc">Generated for clients</div>
+            </div>
+            <div class="stat-card" data-delay="300">
+                <div class="stat-value" data-count="24">0</div>
+                <div class="stat-unit">/7</div>
+                <div class="stat-label">Support</div>
+                <div class="stat-desc">Dedicated assistance</div>
+            </div>
+        </div>
+        
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator" id="scrollIndicator">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+            <span class="scroll-text">Scroll to explore</span>
+        </div>
+    </section>
+    
+    <!-- Content Section (to demonstrate scroll effect) -->
+    <section class="content-section">
+        <div class="content-container">
+            <h2>Next Section</h2>
+            <p>Continue scrolling to see the hero section animation in action. The visual element, headline, and statistics will respond to your scroll position.</p>
+            <div class="content-grid">
+                <img class="box-img" src="download1.jpg" alt="">
+                <img class="box-img" src="download.jpg" alt="">
+                <img class="box-img" src="images3.jpg" alt="">
+                
+                
+            </div>
+        </div>
+    </section>
+    
+    <script src="hero.js"></script>
+</body>
+</html>
